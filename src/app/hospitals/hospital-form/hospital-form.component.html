@@ -1,0 +1,15 @@
+<h2>Formulario de Hospital</h2>
+<form [formGroup]="hospitalForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Nombre del Hospital</mat-label>
+    <input matInput formControlName="name" placeholder="Nombre del Hospital" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Ubicación</mat-label>
+    <input matInput formControlName="location" placeholder="Ubicación" required />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Guardar</button>
+</form>
+
